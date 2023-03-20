@@ -1,5 +1,8 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "@/App.vue";
+import routes from "@/routes";
 
-createApp(App).mount('#app')
+import "@/assets/styles/index.scss";
+import "@/assets/styles/tailwind.css";
+
+createApp(App).use(routes).mount("#app");
